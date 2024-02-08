@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fabio | Portfolio</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Carter+One&family=Inconsolata:wght@400;600;700&family=Rubik+Glitch+Pop&family=Single+Day&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="shortcut icon" href="../logo.svg" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="cursor light"></div>
+    <header class="header">
+      <nav class="header__nav">
+        <a aria-label="home" class="logo" href="#" style="--i: 5">
+          <div class="circles">
+            <div></div>
+            <div></div>
+          </div>
+        </a>
+        <div class="header__menu">
+          <ul class="list">
+            <li class="list__item">
+              <a class="list__link" href="#home" style="--i: 1"
+                ><i class="bx bx-home"></i>Home</a
+              >
+            </li>
+            <li class="list__item">
+              <a class="list__link" href="#about" style="--i: 2"
+                ><i class="bx bxs-id-card"></i>About me</a
+              >
+            </li>
+            <li class="list__item">
+              <a class="list__link" href="#projects" style="--i: 3"
+                ><i class="bx bx-table"></i>Projects</a
+              >
+            </li>
+            <li class="list__item">
+              <a class="list__link" href="#contact" style="--i: 4"
+                ><i class="bx bxs-contact"></i>Contact me</a
+              >
+            </li>
+          </ul>
+          <div class="header__menu-social">
+            <a
+              aria-label="email"
+              href="mailto:adrian.camacho.zotelo@gmail.com"
+              target="_blank"
+              ><i class="bx bx-envelope"></i
+            ></a>
+            <a
+              aria-label="github"
+              href="https://github.com/Adi020"
+              target="_blank"
+              ><i class="bx bxl-github"></i
+            ></a>
+            <a
+              aria-label="bxl-linkedin"
+              href="https://www.linkedin.com/in/fabio-camacho-a41b17281/"
+              target="_blank"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
+          </div>
+        </div>
+        <div class="header__social">
+          <a
+            aria-label="email"
+            href="mailto:adrian.camacho.zotelo@gmail.com"
+            target="_blank"
+            ><i class="bx bx-envelope"></i
+          ></a>
+          <a
+            aria-label="github"
+            href="https://github.com/Adi020"
+            target="_blank"
+            ><i class="bx bxl-github"></i
+          ></a>
+          <a
+            aria-label="bxl-linkedin"
+            href="https://www.linkedin.com/in/fabio-camacho-a41b17281/"
+            target="_blank"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+        </div>
+        <button
+          type="button"
+          title="view links"
+          class="header__btn"
+          style="--i: 5"
+        >
+          <i class="bx bx-menu"></i>
+        </button>
+        <div class="header__translate">
+          <span class="es">Es</span>
+          <input type="checkbox" id="btn-switch" checked />
+          <label class="label-switch" for="btn-switch"></label>
+          <span class="en">En</span>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section id="home" class="hero">
+        <div class="container">
+          <div class="hero__img">
+            <img src="../assets/img/Robot.webp" alt="Robot" />
+            <img src="../assets/img/Ellipse.svg" alt="Elipse" />
+            <img src="../assets/img/Ellipse2.png" alt="Elipse" />
+            <img src="../assets/img/Ellipse3.png" alt="Elipse" />
+          </div>
+          <div class="hero__container">
+            <div class="hero__tag">Full-Stack Web Developer</div>
+            <h1 class="hero__title">
+              <span class="title__tag">Hi,</span> I'm Fabio
+            </h1>
+            <p class="hero__text">
+              I'm ready to bring my skills as a web developer to your big
+              project. If you're looking for someone committed, I'm the one.
+            </p>
+            <button onclick="location.href='#contact'" class="hero__btn">
+              Contact me<i class="bx bx-chevron-down"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section about">
+        <h2 class="title">About me</h2>
+        <div class="container">
+          <div class="about__img">
+            <div class="about__social">
+              <a
+                aria-label="email"
+                href="mailto:adrian.camacho.zotelo@gmail.com"
+                target="_blank"
+                ><i class="bx bx-envelope"></i
+              ></a>
+              <a
+                aria-label="github"
+                href="https://github.com/Adi020"
+                target="_blank"
+                ><i class="bx bxl-github"></i
+              ></a>
+              <a
+                aria-label="bxl-linkedin"
+                href="https://www.linkedin.com/in/fabio-camacho-a41b17281/"
+                target="_blank"
+                ><i class="bx bxl-linkedin"></i
+              ></a>
+            </div>
+            <span class="cicle-spin"></span>
+            <img src="../assets/img/Photo.png" alt="photo" />
+          </div>
+          <div>
+            <p class="about__text">
+              Hi, I'm Fabio Adrian. My first approach to web development began
+              at the age of 15, when I accidentally deleted an element from a
+              page by clicking 'inspect element'. Concerned about correcting it,
+              my interest in programming arose, thus marking the beginning of my
+              career. Since then, I have gained skills in various technologies
+              such as HTML, CSS, React, Node.js, and I continue to grow and
+              learn in this exciting field.
+            </p>
+          </div>
+          <a class="btn" href="../public/CV es/CV.pdf" download>Download CV</a>
+        </div>
+      </section>
+
+      <section id="projects" class="section portfolio">
+        <h2 class="title">Projects</h2>
+        <div class="container swiper">
+          <div class="featured__content swiper-wrapper">
+            <div class="swiper-slide">
+              <div id="1" class="featured__item" style="position: relative">
+                <div class="featured__img" style="position: relative">
+                  <img src="../assets/img/Pokedex.webp" alt="image" />
+                </div>
+                <div class="featured__body">
+                  <h3 class="featured__title">Pokedex</h3>
+                  <p class="featured__text">
+                    Query via API, compositing, local persistence storage,
+                    filtered by search, filtered by category, Pokemon List,
+                    Pokemon Features Listing and responsive interface.
+                  </p>
+                  <a
+                    class="featured__link"
+                    target="_blank"
+                    href="https://pokedex-proyectt.netlify.app/"
+                    >WebSite<i class="bx bx-right-top-arrow-circle"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div id="2" class="featured__item">
+                <div class="featured__img">
+                  <img src="../assets/img/Carrito.webp" alt="image" />
+                </div>
+                <div class="featured__body">
+                  <h3 class="featured__title">Shopping Cart</h3>
+                  <p class="featured__text">
+                    Query via API, filter by category, aggregate of items, total
+                    price in items, purchase of items, loader and responsive
+                    interface.
+                  </p>
+                  <a
+                    class="featured__link"
+                    target="_blank"
+                    href="https://mi-ccarrito-de-compras.netlify.app/"
+                    >WebSite<i class="bx bx-right-top-arrow-circle"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div id="3" class="featured__item">
+                <div class="featured__img">
+                  <img src="../assets/img/Clima.webp" alt="image" />
+                </div>
+                <div class="featured__body">
+                  <h3 class="featured__title">Weather App</h3>
+                  <p class="featured__text">
+                    Query via API, location permissions, query by location,
+                    compositing, image by weather, conversion of Grades, Loader
+                    & Responsive Interface
+                  </p>
+                  <a
+                    class="featured__link"
+                    target="_blank"
+                    href="https://entregable-gen26-2.netlify.app/"
+                    >WebSite<i class="bx bx-right-top-arrow-circle"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+        <div class="container projects-content">
+          <div class="portfolio__content hidden__projects">
+            <article class="portfolio__item">
+              <div class="portfolio__body">
+                <h3 class="portfolio__title">
+                  <span class="portfolio__tag">Weather </span>app
+                </h3>
+                <p class="portfolio__text">
+                  In the development of this application, I employed a
+                  combination of advanced technologies, including ReactJS and
+                  TailwindCSS. I implemented API consumption, requesting
+                  permissions and providing<span>...</span
+                  ><span class="showText">
+                    the user's location to make precise queries. In addition, I
+                    designed the interface to be responsive, ensuring an optimal
+                    user experience on any type of device</span
+                  >
+                  <span class="viewMore">
+                    Show More<i class="bx bx-chevron-down"></i
+                  ></span>
+                </p>
+              </div>
+              <div class="portfolio__img">
+                <img src="../assets/img/mask.webp" alt="image" />
+                <img
+                  class="ellipse__right"
+                  src="../assets/img/EllipseProyects2.png"
+                  alt="image"
+                />
+                <div class="project__desktop left">
+                  <div class="project__img">
+                    <img src="../assets/img/Clima.webp" alt="image" />
+                  </div>
+                </div>
+                <div class="project__mobile left">
+                  <div class="project__img">
+                    <img src="../assets/img/ClimaMovil.jpg" alt="image" />
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="portfolio__item">
+              <div class="portfolio__body">
+                <h3 class="portfolio__title">
+                  <span class="portfolio__tag">Pokemon </span>app
+                </h3>
+                <p class="portfolio__text">
+                  In the development of this application, I employed a
+                  combination of advanced technologies such as reactJS,
+                  TailwindCSS, and libraries such as redux and react router
+                  doom. I implemented API consumption,<span>...</span
+                  ><span class="showText">
+                    I complemented the page with some extra functionalities such
+                    as filtering by category and searching for a specific
+                    pokémon, I also designed the interface to be
+                    responsive</span
+                  >
+                  <span class="viewMore">
+                    Show More<i class="bx bx-chevron-down"></i
+                  ></span>
+                </p>
+              </div>
+              <div class="portfolio__img">
+                <img src="../assets/img/mask.webp" alt="image" />
+                <img
+                  class="ellipse__left"
+                  src="../assets/img/EllipseProyects.png"
+                  alt="image"
+                />
+                <div class="project__desktop right">
+                  <div class="project__img">
+                    <img src="../assets/img/Pokedex.webp" alt="image" />
+                  </div>
+                </div>
+                <div class="project__mobile right">
+                  <div class="project__img">
+                    <img src="../assets/img/PokedexMovil.jpg" alt="image" />
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="portfolio__item">
+              <div class="portfolio__body">
+                <h3 class="portfolio__title">
+                  <span class="portfolio__tag">Shopping </span>cart
+                </h3>
+                <p class="portfolio__text">
+                  In the development of this website, I used a combination of 3
+                  technologies such as HTML, CSS, and Javascript. I implemented
+                  API consumption, to display the items,<span>...</span
+                  ><span class="showText">
+                    I added a filter by category, added items to the cart, total
+                    sum of the aggregator products and item purchase, in
+                    addition to designing the interface to be responsive</span
+                  >
+                  <span class="viewMore">
+                    Show More<i class="bx bx-chevron-down"></i
+                  ></span>
+                </p>
+              </div>
+
+              <div class="portfolio__img">
+                <img src="../assets/img/mask.webp" alt="image" />
+                <img
+                  class="ellipse__right"
+                  src="../assets/img/EllipseProyects2.png"
+                  alt="image"
+                />
+                <div class="project__desktop left">
+                  <div class="project__img">
+                    <img src="../assets/img/Carrito.webp" alt="image" />
+                  </div>
+                </div>
+                <div class="project__mobile left">
+                  <div class="project__img">
+                    <img src="../assets/img/CarritoMovil.jpg" alt="image" />
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="portfolio__item">
+              <div class="portfolio__body">
+                <h3 class="portfolio__title">
+                  <span class="portfolio__tag">Users </span>crud
+                </h3>
+                <p class="portfolio__text">
+                  In developing this application, I employed a combination of
+                  advanced technologies, including ReactJS and TailwindCSS. I
+                  implemented API consumption, listing users, using methods to
+                  add, delete and update users,<span>...</span
+                  ><span class="showText">
+                    added night mode and day mode, plus the interface is
+                    responsive adapting to any device</span
+                  >
+                  <span class="viewMore">
+                    Show More<i class="bx bx-chevron-down"></i
+                  ></span>
+                </p>
+              </div>
+
+              <div class="portfolio__img">
+                <img src="../assets/img/mask.webp" alt="image" />
+                <img
+                  class="ellipse__left"
+                  src="../assets/img/EllipseProyects.png"
+                  alt="image"
+                />
+                <div class="project__desktop right">
+                  <div class="project__img">
+                    <img
+                      src="../assets/img/ConsultaDeUsuarios.webp"
+                      alt="image"
+                    />
+                  </div>
+                </div>
+                <div class="project__mobile right">
+                  <div class="project__img">
+                    <img
+                      src="../assets/img/ConsultaDeUsuariosMovil.jpg"
+                      alt="image"
+                    />
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="portfolio__item">
+              <div class="portfolio__body">
+                <h3 class="portfolio__title">
+                  <span class="portfolio__tag">Random </span>Phrase App
+                </h3>
+                <p class="portfolio__text">
+                  In developing this application, I employed a combination of
+                  advanced technologies, including ReactJS and TailwindCSS. with
+                  persistence in local storage to generate random phases and
+                  display random images<span>...</span
+                  ><span class="showText">
+                    along with their author, plus the responsive interface to
+                    adapt to any device</span
+                  >
+                  <span class="viewMore">
+                    Show More<i class="bx bx-chevron-down"></i
+                  ></span>
+                </p>
+              </div>
+
+              <div class="portfolio__img">
+                <img src="../assets/img/mask.webp" alt="image" />
+                <img
+                  class="ellipse__right"
+                  src="../assets/img/EllipseProyects2.png"
+                  alt="image"
+                />
+                <div class="project__desktop left">
+                  <div class="project__img">
+                    <img src="../assets/img/FraseRandom.jpg" alt="image" />
+                  </div>
+                </div>
+                <div class="project__mobile left">
+                  <div class="project__img">
+                    <img src="../assets/img/FraseRandomMovil.jpg" alt="image" />
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <button class="portfolio__show">Show More</button>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <h2 class="title">¡Contact me!</h2>
+        <div class="container">
+          <form id="form" class="contact__form">
+            <div class="label__input">
+              <label for="name"><i class="bx bx-user"></i></label>
+              <input type="text" id="name" placeholder="Name" name="name" />
+            </div>
+            <div class="label__input">
+              <label for="email"><i class="bx bx-at"></i></label>
+              <input
+                type="email"
+                id="email"
+                placeholder="Email"
+                name="email"
+              />
+            </div>
+            <div class="textarea">
+              <label for="message">Mensaje</label>
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+                placeholder="Type your message..."
+              ></textarea>
+            </div>
+            <button class="btn" type="submit">Send</button>
+          </form>
+        </div>
+      </section>
+
+      <footer id="footer" class="footer">
+        <p class="footer__copy">Copyright &copy; 2023</p>
+      </footer>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../assets/js/index.js"></script>
+  </body>
+</html>
