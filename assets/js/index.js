@@ -1,5 +1,3 @@
-
-//aqui
 document.addEventListener("DOMContentLoaded", function () {
   // Declaración de variables
   const headerMenu = document.querySelector(".header__menu");
@@ -23,26 +21,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   showText.forEach((text) => text.addEventListener("click", handleShowText));
   check.addEventListener("click", handleSwitch);
-  const swiper = new Swiper(".portfolio .swiper", {
-    loop: true,
-    slidesPerView: 1,
-    spaceBetween: 10,
-  
-    pagination: {
-      el: ".swiper-pagination",
-    },
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  
-    // And if we need scrollbar
-    scrollbar: {
-      el: ".swiper-scrollbar",
-    },
-  });
 
   // Observadores de intersección
   const observer = new IntersectionObserver(handleIntersection, { rootMargin: "-60% 0px -40% 0px" });
@@ -51,6 +29,26 @@ document.addEventListener("DOMContentLoaded", function () {
   projects.forEach((project) => projectObserver.observe(project));
 
   // Funciones de eventos
+  const swiper = new Swiper(".portfolio .swiper", {
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 10,
+
+  pagination: {
+    el: ".swiper-pagination",
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: ".swiper-scrollbar",
+  },
+});
   function handleClick(e) {
     if (e.target.closest(".header__btn")) {
       headerMenu.classList.toggle("show__menu");
@@ -76,11 +74,11 @@ document.addEventListener("DOMContentLoaded", function () {
     if (portfolioContainer.classList.contains("hidden__projects")) {
       portfolioContainer.classList.replace("hidden__projects", "show__projects");
       portfolioContainer.style.maxHeight = altura + 40 + "px";
-      portfolioContainer.parentNode.lastElementChild.childNodes[0].nodeValue = "Ver Menos;
+      portfolioContainer.parentNode.lastElementChild.childNodes[0].nodeValue = "Ver Menos";
     } else {
       portfolioContainer.classList.replace("show__projects", "hidden__projects");
       portfolioContainer.style.maxHeight = "700px";
-      portfolioContainer.parentNode.lastElementChild.childNodes[0].nodeValue = "Ver Más;
+      portfolioContainer.parentNode.lastElementChild.childNodes[0].nodeValue = "Ver Más";
     }
     showDegradiant.classList.toggle("fadeout");
   }
@@ -97,11 +95,11 @@ document.addEventListener("DOMContentLoaded", function () {
     separator.classList.toggle("showSeparator");
     span.classList.toggle("showText");
     if (downArrowicon) {
-      elementParent.childNodes[0].nodeValue = "Ver Menos;
+      elementParent.childNodes[0].nodeValue = "Mostrar Menos";
       elementParent.lastElementChild.classList.replace("bx-chevron-down", "bx-chevron-up");
     } else {
       elementParent.lastElementChild.classList.replace("bx-chevron-up", "bx-chevron-down");
-      elementParent.childNodes[0].nodeValue = "Ver Más;
+      elementParent.childNodes[0].nodeValue = "Mostrar Más";
     }
   }
 
