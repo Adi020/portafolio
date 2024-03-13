@@ -74,11 +74,11 @@ document.addEventListener("DOMContentLoaded", function () {
     if (portfolioContainer.classList.contains("hidden__projects")) {
       portfolioContainer.classList.replace("hidden__projects", "show__projects");
       portfolioContainer.style.maxHeight = altura + 40 + "px";
-      portfolioContainer.parentNode.lastElementChild.childNodes[0].nodeValue = "Ver Menos";
+      portfolioContainer.parentNode.lastElementChild.childNodes[0].nodeValue = check.checked ? "Show Less" : "Ver Menos";
     } else {
       portfolioContainer.classList.replace("show__projects", "hidden__projects");
       portfolioContainer.style.maxHeight = "700px";
-      portfolioContainer.parentNode.lastElementChild.childNodes[0].nodeValue = "Ver Más";
+      portfolioContainer.parentNode.lastElementChild.childNodes[0].nodeValue = check.checked ? "Show More" : "Ver Más";
     }
     showDegradiant.classList.toggle("fadeout");
   }
@@ -95,11 +95,11 @@ document.addEventListener("DOMContentLoaded", function () {
     separator.classList.toggle("showSeparator");
     span.classList.toggle("showText");
     if (downArrowicon) {
-      elementParent.childNodes[0].nodeValue = "Mostrar Menos";
+      elementParent.childNodes[0].nodeValue = check.checked ? "Show Less" : "Mostrar Menos";
       elementParent.lastElementChild.classList.replace("bx-chevron-down", "bx-chevron-up");
     } else {
       elementParent.lastElementChild.classList.replace("bx-chevron-up", "bx-chevron-down");
-      elementParent.childNodes[0].nodeValue = "Mostrar Más";
+      elementParent.childNodes[0].nodeValue = check.checked ? "Show More" : "Mostrar Más";
     }
   }
 
