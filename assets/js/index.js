@@ -115,7 +115,8 @@ document.addEventListener("DOMContentLoaded", function () {
         links.forEach((link) => link.classList.remove("active"));
         document.querySelector(`header nav a.list__link[href="#${entry.target.id}"]`).classList.add("active");
         history.pushState(null, "", `#${entry.target.id}`);
-        entry.target.classList.replace("hidden-animate", "show-animate");
+        entry.target.classList.add("show-animate")
+        entry.target.classList.remove("hidden-animate")
       } else {
         entry.target.classList.replace("show-animate", "hidden-animate");
       }
