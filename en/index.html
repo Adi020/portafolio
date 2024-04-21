@@ -183,7 +183,32 @@
         <div class="container swiper">
           <div class="featured__content swiper-wrapper">
             <div class="swiper-slide">
-              <div id="1" class="featured__item project-hidden" style="position: relative">
+              <div id="1" class="featured__item project-hidden">
+                <div class="featured__img">
+                  <img src="../assets/img/E-commerce.png" alt="image" />
+                </div>
+                <div class="featured__body">
+                  <h3 class="featured__title">E-commerce</h3>
+                  <p class="featured__text">
+                    Query via API, persistence in local storage, filtering by
+                    search, filtering by category, filtering by price, login,
+                    user registration and purchases.
+                  </p>
+                  <a
+                    class="featured__link"
+                    target="_blank"
+                    href="https://e-commerce-a-pp.netlify.app/"
+                    >WebSite<i class="bx bx-right-top-arrow-circle"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                id="2"
+                class="featured__item project-hidden"
+                style="position: relative"
+              >
                 <div class="featured__img" style="position: relative">
                   <img src="../assets/img/Pokedex.webp" alt="image" />
                 </div>
@@ -204,7 +229,7 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <div id="2" class="featured__item project-hidden">
+              <div id="3" class="featured__item project-hidden">
                 <div class="featured__img">
                   <img src="../assets/img/Carrito.webp" alt="image" />
                 </div>
@@ -218,14 +243,14 @@
                   <a
                     class="featured__link"
                     target="_blank"
-                    href="https://shopping-cart-acc.netlify.app/"
+                    href="https://mi-ccarrito-de-compras.netlify.app/"
                     >WebSite<i class="bx bx-right-top-arrow-circle"></i
                   ></a>
                 </div>
               </div>
             </div>
             <div class="swiper-slide">
-              <div id="3" class="featured__item project-hidden">
+              <div id="4" class="featured__item project-hidden">
                 <div class="featured__img">
                   <img src="../assets/img/Clima.webp" alt="image" />
                 </div>
@@ -458,6 +483,47 @@
                 </div>
               </div>
             </article>
+
+            <article class="portfolio__item">
+              <div class="portfolio__body">
+                <h3 class="portfolio__title">
+                  <span class="portfolio__tag">E-commerce </span>with user login
+                </h3>
+                <p class="portfolio__text">
+                  When developing this application, I employed a combination of
+                  advanced technologies including ReactJS and TailwindCSS. I
+                  used libraries like Redux to manage global<span>...</span
+                  ><span class="showText">
+                    states, react-router-dom to route and manage protected
+                    routes, Axios to handle requests quickly and react-hook-form
+                    to handle the information received by forms in a simpler
+                    way.</span
+                  >
+                  <span class="viewMore">
+                    Show More<i class="bx bx-chevron-down"></i
+                  ></span>
+                </p>
+              </div>
+
+              <div class="portfolio__img">
+                <img src="../assets/img/mask.webp" alt="image" />
+                <img
+                  class="ellipse__right"
+                  src="../assets/img/EllipseProyects2.png"
+                  alt="image"
+                />
+                <div class="project__desktop left">
+                  <div class="project__img">
+                    <img src="../assets/img/E-commerce.png" alt="image" />
+                  </div>
+                </div>
+                <div class="project__mobile left">
+                  <div class="project__img">
+                    <img src="../assets/img/E-commerce-movil.jpg" alt="image" />
+                  </div>
+                </div>
+              </div>
+            </article>
           </div>
           <button class="portfolio__show">Show More</button>
         </div>
@@ -473,12 +539,7 @@
             </div>
             <div class="label__input">
               <label for="email"><i class="bx bx-at"></i></label>
-              <input
-                type="email"
-                id="email"
-                placeholder="Email"
-                name="email"
-              />
+              <input type="email" id="email" placeholder="Email" name="email" />
             </div>
             <div class="textarea">
               <label for="message">Mensaje</label>
