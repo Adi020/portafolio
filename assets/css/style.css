@@ -199,6 +199,7 @@ img {
   padding-bottom: 20px;
   gap: 3px;
 }
+
 .en {
   color: #9c9c9c;
   font-size: 10px;
@@ -587,6 +588,7 @@ img {
 
 .projects-content {
   padding-top: 20px;
+  position: relative;
 }
 
 .hidden__projects {
@@ -613,17 +615,14 @@ img {
   border-radius: 0px 0px 10px 10px;
 }
 
-.portfolio .portfolio__content.fadeout::after {
-  display: none;
-}
 
 .portfolio__show {
   position: absolute;
-  bottom: 70px;
+  bottom: 0;
   left: 50%;
   right: 0;
   transform: translateX(-50%);
-  z-index: 1;
+  z-index: 2;
   font-weight: 600;
   font-family: inherit;
 }
@@ -762,6 +761,7 @@ img {
   height: 100%;
   width: 100%;
   transition: scale 0.2s ease-in-out;
+  object-fit: cover;
 }
 
 .project__img img:hover {
@@ -799,7 +799,6 @@ img {
   display: flex;
   justify-content: center;
 }
-
 .contact__form {
   width: 90%;
   display: flex;
@@ -1146,12 +1145,13 @@ img {
   .about .title,
   .about__img,
   .about .btn,
-  .title, 
-  .portfolio__content, .portfolio__show
-  #form {
+  .title,
+  .portfolio__content,
+  .portfolio__show #form {
     animation: fadeLeft 0.4s ease forwards;
   }
-  .featured__item, .portfolio__show {
+  .featured__item,
+  .portfolio__show {
     opacity: 0;
   }
   .show-animate .featured__item {
@@ -1160,7 +1160,7 @@ img {
     transition-delay: 0.4s;
   }
   .show-animate .title {
-    animation: slideBottom .7s ease forwards;
+    animation: slideBottom 0.7s ease forwards;
   }
   .hidden-animate .featured__item {
     transition: opacity 0.4s ease;
@@ -1168,14 +1168,14 @@ img {
   .portfolio__content {
     opacity: 0;
   }
-  .show-animate .portfolio__content{
+  .show-animate .portfolio__content {
     animation: slideTop 0.5s ease forwards;
     animation-delay: 0.2s;
   }
   .show-animate .portfolio__show {
     opacity: 1;
-    transition: opacity ,3s ease;
-  } 
+    transition: opacity, 3s ease;
+  }
   .contact .title {
     opacity: 0;
   }
@@ -1433,4 +1433,6 @@ img {
 .viewMore {
   cursor: pointer;
   color: rgb(101, 6, 255);
+  flex-shrink: 0;
+  display: inline-block;
 }
